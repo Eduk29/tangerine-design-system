@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-config-prettier-scss",
+    "stylelint-config-standard-scss"
+  ],
+  "ignoreFiles": ["**/*.css"],
+  "rules": {
+    "no-empty-source": null,
+    "scss/no-global-function-names": null
+  }
+}
