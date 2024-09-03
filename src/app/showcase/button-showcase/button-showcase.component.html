@@ -1,0 +1,175 @@
+<section class="d-flex flex-column">
+  <h6>Basic Button</h6>
+  <div class="d-flex flex-row">
+    <app-button
+      basicButton
+      label="Login"
+      color="primary"
+      iconColor="primary"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      basicButton
+      label="Login"
+      icon="person"
+      iconPosition="after"
+      color="secondary"
+      iconColor="secondary"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      basicButton
+      label="Login"
+      icon="person"
+      iconPosition="before"
+      color="tertiary"
+      iconColor="tertiary"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      basicButton
+      label="Login"
+      color="success"
+      iconColor="success"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      basicButton
+      label="Login"
+      color="error"
+      iconColor="error"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button basicButton label="Login" [disabled]="true" class="mx-2" (clickEvent)="test()"> </app-button>
+  </div>
+</section>
+<hr />
+
+<section class="d-flex flex-column">
+  <h6>Flat Button</h6>
+  <div class="d-flex flex-row">
+    <app-button flatButton label="Login" color="primary" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button
+      flatButton
+      label="Login"
+      icon="person"
+      iconPosition="after"
+      color="secondary"
+      iconColor="white"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      flatButton
+      label="Login"
+      icon="person"
+      iconPosition="before"
+      color="tertiary"
+      iconColor="white"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      flatButton
+      label="Login"
+      color="success"
+      iconColor="success"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      flatButton
+      label="Login"
+      color="error"
+      iconColor="error"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button flatButton label="Login" [disabled]="true" class="mx-2" (clickEvent)="test()"> </app-button>
+  </div>
+</section>
+<hr />
+
+<section class="d-flex flex-column">
+  <h6>Outlined Button</h6>
+  <div class="d-flex flex-row">
+    <app-button outlineButton label="Login" color="primary" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button
+      outlineButton
+      label="Login"
+      icon="person"
+      iconPosition="after"
+      color="secondary"
+      iconColor="secondary"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      outlineButton
+      label="Login"
+      icon="person"
+      iconPosition="before"
+      color="tertiary"
+      iconColor="tertiary"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      outlineButton
+      label="Login"
+      color="success"
+      iconColor="success"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button
+      outlineButton
+      label="Login"
+      color="error"
+      iconColor="error"
+      [disabled]="false"
+      class="mx-2"
+      (clickEvent)="test()">
+    </app-button>
+    <app-button outlineButton label="Login" [disabled]="true" class="mx-2" (clickEvent)="test()"> </app-button>
+  </div>
+</section>
+<hr />
+
+<section class="d-flex flex-column">
+  <h6>Fab Button</h6>
+  <div class="d-flex flex-row">
+    <app-button fabButton icon="person" color="primary" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button fabButton icon="person" color="secondary" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button fabButton icon="person" color="tertiary" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button fabButton color="success" icon="person" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button fabButton color="error" icon="person" [disabled]="false" class="mx-2" (clickEvent)="test()">
+    </app-button>
+    <app-button fabButton color="primary" icon="person" [disabled]="true" class="mx-2" (clickEvent)="test()">
+    </app-button>
+  </div>
+</section>
+<hr />
