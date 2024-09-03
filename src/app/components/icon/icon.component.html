@@ -1,0 +1,7 @@
+@if (iconLibrary === 'material') {
+  <span class="material-symbols-outlined icon" [ngClass]="color + ' ' + size + ' ' + customClass">{{ iconName }}</span>
+}
+
+@if (iconLibrary === 'font-awesome') {
+  <span class="fa-solid fa-{{ iconName }} icon" [ngClass]="color + ' ' + size + ' ' + customClass"></span>
+}

@@ -1,0 +1,59 @@
+@import 'src/styles';
+
+.icon {
+  cursor: pointer;
+
+  &.small-size {
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+  }
+
+  &.medium-size {
+    height: 32px;
+    width: 32px;
+    font-size: 32px;
+  }
+
+  &.large-size {
+    height: 48px;
+    width: 48px;
+    font-size: 48px;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.primary {
+    color: $primary-color;
+  }
+
+  &.secondary {
+    color: $secondary-color;
+  }
+
+  &.tertiary {
+    color: $tertiary-color;
+  }
+
+  &.success {
+    color: $success-color;
+  }
+
+  &.error {
+    color: $error-color;
+  }
+
+  &.warning {
+    color: $warning-color;
+  }
+
+  &.default {
+    color: $default-color;
+  }
+}
