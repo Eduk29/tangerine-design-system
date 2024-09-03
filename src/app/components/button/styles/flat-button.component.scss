@@ -1,0 +1,137 @@
+@import 'src/styles';
+
+.flat-button {
+  border: none;
+  border-radius: 99px;
+  padding: 10px 20px;
+
+  &.primary {
+    color: $white;
+    background-color: $primary-color;
+
+    &:disabled {
+      color: $disabled-text;
+      background-color: $disabled-background;
+    }
+
+    &:hover {
+      &:not(:disabled) {
+        background-color: $primary-color;
+        opacity: 0.75;
+        transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+    &:active {
+      &:not(:disabled) {
+        background-color: $primary-color;
+        opacity: 0.90;
+        transition: background-color 0.5s all 3s;
+      }
+    }
+  }
+
+  &.secondary {
+    color: $white;
+    background-color: $secondary-color;
+
+    &:disabled {
+      color: $disabled-text;
+      background-color: $disabled-background;
+    }
+
+    &:hover {
+      &:not(:disabled) {
+        background-color: $secondary-color;
+        opacity: 0.75;
+        transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+    &:active {
+      &:not(:disabled) {
+        background-color: $secondary-color;
+        opacity: 0.90;
+        transition: background-color 0.5s all 3s;
+      }
+    }
+  }
+
+  &.tertiary {
+    color: $white;
+    background-color: $tertiary-color;
+
+    &:disabled {
+      color: $disabled-text;
+      background-color: $disabled-background;
+    }
+
+    &:hover {
+      &:not(:disabled) {
+        background-color: $tertiary-color;
+        opacity: 0.75;
+        transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+    &:active {
+      &:not(:disabled) {
+        background-color: $tertiary-color;
+        opacity: 0.90;
+        transition: background-color 0.5s all 3s;
+      }
+    }
+  }
+
+  &.success {
+    color: $white;
+    background-color: $success-color;
+
+    &:disabled {
+      color: $disabled-text;
+      background-color: $disabled-background;
+    }
+
+    &:hover {
+      &:not(:disabled) {
+        background-color: $success-color;
+        opacity: 0.75;
+        transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+    &:active {
+      &:not(:disabled) {
+        background-color: $success-color;
+        opacity: 0.90;
+        transition: background-color 0.5s all 3s;
+      }
+    }
+  }
+
+  &.error {
+    color: $white;
+    background-color: $error-color;
+
+    &:disabled {
+      color: $disabled-text;
+      background-color: $disabled-background;
+    }
+
+    &:hover {
+      &:not(:disabled) {
+        background-color: $error-color;
+        opacity: 0.75;
+        transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+    &:active {
+      &:not(:disabled) {
+        background-color: $error-color;
+        opacity: 0.90;
+        transition: background-color 0.5s all 3s;
+      }
+    }
+  }
+}

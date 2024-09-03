@@ -1,0 +1,16 @@
+<button
+  [type]="type"
+  class="d-flex flex-row justify-content-center align-items-center"
+  [ngClass]="customClass"
+  [disabled]="disabled"
+  (click)="dispatchClickEvent()">
+  @if (iconPosition === 'before' && icon !== '') {
+    <app-icon [iconName]="icon" [color]="iconColor" iconSize="small" class="button-icon-before"></app-icon>
+  }
+
+  <p class="m-0 button-label">{{ label }}</p>
+
+  @if (iconPosition === 'after' && icon !== '') {
+    <app-icon [iconName]="icon" [color]="iconColor" iconSize="small" class="button-icon-after"></app-icon>
+  }
+</button>
