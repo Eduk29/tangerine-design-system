@@ -6,6 +6,12 @@
   "ignoreFiles": ["**/*.css"],
   "rules": {
     "no-empty-source": null,
-    "scss/no-global-function-names": null
+    "scss/no-global-function-names": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "length-zero-no-unit": null,
+    "property-no-vendor-prefix": null,
+    "scss/load-partial-extension": null
   }
 }

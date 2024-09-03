@@ -1,0 +1,53 @@
+@use "./../node_modules/piscium-theme/theme/piscium-base.theme.scss" as theme;
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: theme.$piscium-color-primary;
+$primary-dark-color: theme.$piscium-color-primary-dark;
+$primary-light-color: theme.$piscium-color-primary-light;
+$primary-hover-color: theme.$piscium-color-primary-hover-status;
+$primary-active-color: theme.$piscium-color-primary-active-status;
+
+$secondary-color: theme.$piscium-color-secondary;
+$secondary-dark-color: theme.$piscium-color-secondary-dark;
+$secondary-light-color: theme.$piscium-color-secondary-light;
+$secondary-hover-color: theme.$piscium-color-secondary-hover-status;
+$secondary-active-color: theme.$piscium-color-secondary-active-status;
+
+$tertiary-color: theme.$piscium-color-tertiary;
+$tertiary-dark-color: theme.$piscium-color-tertiary-dark;
+$tertiary-light-color: theme.$piscium-color-tertiary-light;
+$tertiary-hover-color: theme.$piscium-color-tertiary-hover-status;
+$tertiary-active-color: theme.$piscium-color-tertiary-active-status;
+
+$success-color: theme.$piscium-color-feedback-success;
+$success-dark-color: theme.$piscium-color-feedback-success-dark;
+$success-light-color: theme.$piscium-color-feedback-success-light;
+$success-hover-color: theme.$piscium-color-feedback-success-hover-status;
+$success-active-color: theme.$piscium-color-feedback-success-hover-status;
+
+$warning-color: theme.$piscium-color-feedback-warning;
+$warning-dark-color: theme.$piscium-color-feedback-warning-dark;
+$warning-light-color: theme.$piscium-color-feedback-warning-light;
+$warning-hover-color: theme.$piscium-color-feedback-warning-hover-status;
+$warning-active-color: theme.$piscium-color-feedback-warning-hover-status;
+
+$error-color: theme.$piscium-color-feedback-error;
+$error-dark-color: theme.$piscium-color-feedback-error-dark;
+$error-light-color: theme.$piscium-color-feedback-error-light;
+$error-hover-color: theme.$piscium-color-feedback-error-hover-status;
+$error-active-color: theme.$piscium-color-feedback-error-hover-status;
+
+// TODO: Add to theme project
+$default-color: rgba(theme.$piscium-color-neutral-black, 0.6);
+
+$disabled-text: theme.$piscium-color-disabled-text;
+$disabled-background: theme.$piscium-color-disabled-background;
+
+$white: theme.$piscium-color-neutral-white;
+$black: theme.$piscium-color-neutral-black;
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
