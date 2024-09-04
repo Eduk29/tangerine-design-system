@@ -13,6 +13,7 @@ import {
 import { ButtonColorTypes } from './types/button-color.type';
 import { ButtonIconColorsType } from './types/button-icon-colors.type';
 import { ButtonIconPositionType } from './types/button-icon-position.type';
+import { ButtonIconLibrariesType } from './types/button-icon-library.type';
 
 @Component({
   selector: 'app-button',
@@ -24,6 +25,7 @@ export class ButtonComponent implements OnChanges, AfterViewChecked {
   @Input() disabled!: boolean;
   @Input() icon: string = '';
   @Input() iconColor: string | ButtonIconColorsType = 'white';
+  @Input() iconLibrary: string | ButtonIconLibrariesType = 'material';
   @Input() iconPosition: string | ButtonIconPositionType = 'before';
   @Input() label!: string;
   @Input() type: 'button' | 'submit' = 'button';

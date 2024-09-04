@@ -5,12 +5,22 @@
   [disabled]="disabled"
   (click)="dispatchClickEvent()">
   @if (iconPosition === 'before' && icon !== '') {
-    <app-icon [iconName]="icon" [color]="iconColor" iconSize="small" class="button-icon-before"></app-icon>
+    <app-icon
+      [iconName]="icon"
+      [iconLibrary]="iconLibrary"
+      [color]="iconColor"
+      iconSize="small"
+      class="button-icon-before"></app-icon>
   }
 
   <p class="m-0 button-label">{{ label }}</p>
 
   @if (iconPosition === 'after' && icon !== '') {
-    <app-icon [iconName]="icon" [color]="iconColor" iconSize="small" class="button-icon-after"></app-icon>
+    <app-icon
+      [iconName]="icon"
+      [iconLibrary]="iconLibrary"
+      [color]="iconColor"
+      iconSize="small"
+      class="button-icon-after"></app-icon>
   }
 </button>
