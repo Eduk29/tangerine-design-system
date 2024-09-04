@@ -1,0 +1,11 @@
+<div class="navbar w-100" [ngClass]="color">
+  @if (showMenu) {
+    <app-button
+      fabButton
+      icon="bars"
+      iconLibrary="font-awesome"
+      (clickEvent)="dispatchOpenMenu()"
+      class="me-2"></app-button>
+  }
+  <h4 class="navbar-title m-0">{{ title }}</h4>
+</div>
