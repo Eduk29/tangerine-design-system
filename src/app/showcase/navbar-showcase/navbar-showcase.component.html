@@ -1,0 +1,53 @@
+<section class="d-flex flex-column mt-2">
+  <h5>Simple Navbar</h5>
+  <hr />
+
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between w-100">
+      <div class="d-flex flex-column w-100 pe-2">
+        <h6>Primary</h6>
+        <app-navbar color="primary" title="title" class="w-100"></app-navbar>
+      </div>
+      <div class="d-flex flex-column w-100 ps-2">
+        <h6>Primary Alternative</h6>
+        <app-navbar color="primary-alternative" title="title" class="w-100"></app-navbar>
+      </div>
+    </div>
+    <hr />
+
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-between w-100">
+        <div class="d-flex flex-column w-100 pe-2">
+          <h6>Secondary</h6>
+          <app-navbar color="secondary" title="title" class="w-100"></app-navbar>
+        </div>
+        <div class="d-flex flex-column w-100 ps-2">
+          <h6>Secondary Alternative</h6>
+          <app-navbar color="secondary-alternative" title="title" class="w-100"></app-navbar>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-between w-100">
+        <div class="d-flex flex-column w-100 pe-2">
+          <h6>Tertiary</h6>
+          <app-navbar color="tertiary" title="title" class="w-100"></app-navbar>
+        </div>
+        <div class="d-flex flex-column w-100 ps-2">
+          <h6>Tertiary Alternative</h6>
+          <app-navbar color="tertiary-alternative" title="title" class="w-100"></app-navbar>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+</section>
+
+<section class="d-flex flex-column mt-2">
+  <h5>Navbar with Menu</h5>
+  <hr />
+  <app-navbar title="title" [showMenu]="true" (openMenuEvent)="openMenu()"></app-navbar>
+  <hr />
+</section>
