@@ -1,0 +1,25 @@
+::ng-deep #card-image {
+  > img {
+    width: 100%;
+  }
+}
+
+.border-rounded {
+  border-radius: 10px;
+}
+
+#card-header:empty {
+  display: none;
+}
+
+#card-image:empty {
+  display: none;
+}
+
+#card-content:empty {
+  display: none;
+}
+
+#card-footer:empty {
+  display: none;
+}

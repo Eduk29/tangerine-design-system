@@ -1,0 +1,17 @@
+<section class="card shadow-sm" [ngClass]="class">
+  <div id="card-header" class="px-3 py-2">
+    <ng-content select="[card-header]"></ng-content>
+  </div>
+
+  <div id="card-image" class="px-0 py-2">
+    <ng-content select="[card-image]"></ng-content>
+  </div>
+
+  <div id="card-content" class="px-3 py-2">
+    <ng-content select="[card-content]"></ng-content>
+  </div>
+
+  <div id="card-footer" class="px-3 py-2">
+    <ng-content select="[card-footer]"></ng-content>
+  </div>
+</section>
