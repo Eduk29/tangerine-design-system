@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { showcaseRoutes } from './configs/showcase.routes';
+import { showcaseRoutes } from './showcase.routes';
 
 const routes: Routes = showcaseRoutes;
 
