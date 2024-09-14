@@ -8,7 +8,7 @@ import { FormfieldLabelPositioType } from '../types/formfield-label-position.typ
   styleUrl: './formfield-text.component.scss',
 })
 export class FormfieldTextComponent implements OnInit {
-  @Input() class!: string;
+  @Input() class: string = '';
   @Input() controlName!: FormControl<unknown>;
   @Input() label!: string;
   @Input() labelPosition: FormfieldLabelPositioType = 'before';
