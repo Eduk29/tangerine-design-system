@@ -1,4 +1,5 @@
 @use "./../node_modules/piscium-theme/theme/piscium-base.theme.scss" as theme;
+@use "./../node_modules/piscium-theme/theme/piscium-typography.theme.scss" as typography;
 @import "./../node_modules/bootstrap/scss/bootstrap.scss";
 
 $primary-color: theme.$piscium-color-primary;
