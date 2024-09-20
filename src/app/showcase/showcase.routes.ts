@@ -14,4 +14,5 @@ export const showcaseRoutes: Routes = [
     path: 'formfield',
     loadChildren: () => import('./formfield-showcase/formfield-showcase.module').then(m => m.FormfieldShowcaseModule),
   },
+  { path: '', redirectTo: 'button', pathMatch: 'full' },
 ];
