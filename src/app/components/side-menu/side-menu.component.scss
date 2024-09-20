@@ -1,0 +1,44 @@
+@import './../../../styles.scss';
+
+#side-menu {
+  a {
+    text-decoration: none;
+  }
+
+  > .side-menu-item {
+    border: none;
+    border-radius: 99px;
+    padding: 10px 20px;
+
+    &.primary {
+      color: $primary-color;
+      background-color: transparent;
+
+      &:disabled {
+        color: $disabled-text;
+        background-color: transparent;
+      }
+
+      &:hover {
+        &:not(:disabled) {
+          background-color: $primary-hover-color;
+          transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+        }
+      }
+
+      &:active {
+        &:not(:disabled) {
+          background-color: $primary-active-color;
+          transition: background-color 0.5s all 3s;
+        }
+      }
+
+      &.router-link-active {
+        &:not(:disabled) {
+          background-color: $primary-active-color;
+          transition: background-color 0.5s all 3s;
+        }
+      }
+    }
+  }
+}

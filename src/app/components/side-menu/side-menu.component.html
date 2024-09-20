@@ -1,0 +1,28 @@
+<div id="side-menu" class="d-flex flex-column">
+  @for (button of showcaseSideMenuButtonsList; track button.id) {
+    @if (!button.children) {
+      <a
+        [routerLink]="button.link"
+        routerLinkActive="router-link-active"
+        class="side-menu-item primary mx-2"
+        (click)="resetDisplaySubMenuState()">
+        <p class="side-menu-item_label m-0 text-center">{{ button.label }}</p></a
+      >
+    } @else {
+      <button
+        class="d-flex flex-row justify-content-center side-menu-item primary mx-2"
+        (click)="toggleSubMenu(button)">
+        <p class="side-menu-item_label m-0 pe-2">{{ button.label }}</p>
+        <span class="material-symbols-outlined icon ps-2">{{ getIconName(button) }}</span>
+      </button>
+    }
+
+    @if (button.displaySubMenu) {
+      @for (subButton of button.children; track subButton.id) {
+        <a [routerLink]="subButton.link" routerLinkActive="router-link-active" class="side-menu-item primary mx-4">
+          <p class="side-menu-item_label m-0 text-center">{{ subButton.label }}</p>
+        </a>
+      }
+    }
+  }
+</div>
