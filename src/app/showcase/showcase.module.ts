@@ -6,6 +6,7 @@ import { CardShowcaseModule } from './card-showcase/card-showcase.module';
 import { IconShowcaseModule } from './icon-showcase/icon-showcase.module';
 import { NavbarShowcaseModule } from './navbar-showcase/navbar-showcase.module';
 import { ShowcaseRoutingModule } from './showcase-routing.module';
+import { SnackbarShowcaseModule } from './snackbar-showcase/snackbar-showcase.module';
 
 @NgModule({
   declarations: [],
@@ -16,6 +17,7 @@ import { ShowcaseRoutingModule } from './showcase-routing.module';
     IconShowcaseModule,
     NavbarShowcaseModule,
     ShowcaseRoutingModule,
+    SnackbarShowcaseModule,
   ],
   exports: [],
 })

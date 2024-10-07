@@ -17,4 +17,5 @@ export const showcaseSideMenuConfig: SideMenuButton[] = [
   },
   { color: 'primary', id: 4, isActive: false, label: 'Icon', link: 'showcase/icon' },
   { color: 'primary', id: 5, isActive: false, label: 'Navbar', link: 'showcase/navbar' },
+  { color: 'primary', id: 6, isActive: false, label: 'Snackbar', link: 'showcase/snackbar' },
 ];

@@ -1,0 +1,35 @@
+<div>
+  <app-snackbar></app-snackbar>
+  <app-button
+    basicButton
+    color="secondary"
+    label="Open Error Snackbar"
+    [disabled]="false"
+    class="mx-2"
+    (clickEvent)="openErrorSnackbar()">
+  </app-button>
+  <app-button
+    basicButton
+    color="secondary"
+    label="Open Info Snackbar"
+    [disabled]="false"
+    class="mx-2"
+    (clickEvent)="openInfoSnackbar()">
+  </app-button>
+  <app-button
+    basicButton
+    color="secondary"
+    label="Open Success Snackbar"
+    [disabled]="false"
+    class="mx-2"
+    (clickEvent)="openSuccessSnackbar()">
+  </app-button>
+  <app-button
+    basicButton
+    color="secondary"
+    label="Open Warning Snackbar"
+    [disabled]="false"
+    class="mx-2"
+    (clickEvent)="openWarningSnackbar()">
+  </app-button>
+</div>
