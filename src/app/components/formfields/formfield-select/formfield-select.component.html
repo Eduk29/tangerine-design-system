@@ -1,0 +1,14 @@
+<div [id]="label.toLocaleLowerCase()" [ngClass]="labelPositionClass + ' ' + customClass">
+  <label [for]="labelFor" class="theme-body w-30 me-2">{{ label }}</label>
+  <div class="d-flex flex-column">
+    <select [name]="labelFor" [id]="labelFor" [formControl]="controlName" class="w-100">
+      @if (placeholder) {
+        <option value="null" [disabled]="true" [selected]="true">{{ placeholder }}</option>
+      }
+      @for (option of optionList; track option.value) {
+        <option [value]="option.value">{{ option.label }}</option>
+      }
+    </select>
+    <p class="theme-caption p-0">{{ hint }}</p>
+  </div>
+</div>

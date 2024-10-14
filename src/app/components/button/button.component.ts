@@ -21,6 +21,7 @@ import { ButtonIconLibrariesType } from './types/button-icon-library.type';
   styleUrl: './button.component.scss',
 })
 export class ButtonComponent implements OnChanges, AfterViewChecked {
+  @Input() customClass: string = '';
   @Input() color: string | ButtonColorTypes = 'primary';
   @Input() disabled!: boolean;
   @Input() icon: string = '';
@@ -54,8 +55,8 @@ export class ButtonComponent implements OnChanges, AfterViewChecked {
     }
   }
 
-  public get customClass(): string {
-    return `${this.color}`;
+  public get class(): string {
+    return `${this.color} ${this.customClass}`;
   }
 
   public get displayButton(): boolean {
