@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { showcaseSideMenuConfig } from '../../shared/configs/showcase-side-menu.config';
 import { SideMenuButton } from './models/side-menu-button.model';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',

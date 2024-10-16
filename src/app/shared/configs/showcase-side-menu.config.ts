@@ -1,4 +1,4 @@
-import { SideMenuButton } from 'src/app/components/side-menu/models/side-menu-button.model';
+import { SideMenuButton } from './../../components/side-menu/models/side-menu-button.model';
 
 export const showcaseSideMenuConfig: SideMenuButton[] = [
   { color: 'primary', id: 1, isActive: false, label: 'Button', link: 'showcase/button' },

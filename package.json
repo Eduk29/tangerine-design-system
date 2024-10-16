@@ -11,6 +11,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
+    "build:lib": "ng-packagr -p ng-package.json",
     "lint:check": "npx eslint src/**/*.{js,ts,html} --quiet",
     "lint:fix": "npx eslint src/**/*.{js,ts,html} --quiet --fix",
     "prepare": "npx husky install",
@@ -38,7 +39,6 @@
     "@angular/router": "^17.3.0",
     "piscium-theme": "https://github.com/Eduk29/piscium-theme/tarball/develop",
     "rxjs": "~7.8.0",
-    "tangerine-design-system": "file:",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
@@ -70,6 +70,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "lint-staged": "^15.2.9",
+    "ng-packagr": "^17.3.0",
     "prettier": "^3.3.3",
     "standard-version": "^9.5.0",
     "stylelint": "^16.8.1",
