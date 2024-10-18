@@ -1,0 +1,45 @@
+{
+  "name": "tangerine-design-system",
+  "version": "0.0.4",
+  "description": "A collection of reusable components, guidelines, and standards to help teams create consistent, scalable, and efficient designs across products or platforms.",
+  "keywords": [
+    "tangerine",
+    "design-system"
+  ],
+  "author": "José Eduardo Trindade E Marques",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "piscium-theme": "https://github.com/Eduk29/piscium-theme/tarball/develop",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "module": "fesm2022/tangerine-design-system.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/tangerine-design-system.mjs",
+      "esm": "./esm2022/tangerine-design-system.mjs",
+      "default": "./fesm2022/tangerine-design-system.mjs"
+    }
+  },
+  "sideEffects": false
+}

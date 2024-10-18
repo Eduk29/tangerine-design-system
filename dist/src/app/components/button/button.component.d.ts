@@ -1,0 +1,32 @@
+import { AfterViewChecked, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges } from '@angular/core';
+import { ButtonColorTypes } from './types/button-color.type';
+import { ButtonIconColorsType } from './types/button-icon-colors.type';
+import { ButtonIconPositionType } from './types/button-icon-position.type';
+import { ButtonIconLibrariesType } from './types/button-icon-library.type';
+import * as i0 from "@angular/core";
+export declare class ButtonComponent implements OnChanges, AfterViewChecked {
+    private eleRef;
+    private cdref;
+    customClass: string;
+    color: string | ButtonColorTypes;
+    disabled: boolean;
+    icon: string;
+    iconColor: string | ButtonIconColorsType;
+    iconLibrary: string | ButtonIconLibrariesType;
+    iconPosition: string | ButtonIconPositionType;
+    label: string;
+    type: 'button' | 'submit';
+    clickEvent: EventEmitter<void>;
+    private _displayButton;
+    constructor(eleRef: ElementRef, cdref: ChangeDetectorRef);
+    ngOnChanges(): void;
+    ngAfterViewChecked(): void;
+    get class(): string;
+    get displayButton(): boolean;
+    get isFabButton(): boolean;
+    dispatchClickEvent(): void;
+    private validateBackgroundColors;
+    private validateOutputFunction;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ButtonComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ButtonComponent, "app-button", never, { "customClass": { "alias": "customClass"; "required": false; }; "color": { "alias": "color"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "icon": { "alias": "icon"; "required": false; }; "iconColor": { "alias": "iconColor"; "required": false; }; "iconLibrary": { "alias": "iconLibrary"; "required": false; }; "iconPosition": { "alias": "iconPosition"; "required": false; }; "label": { "alias": "label"; "required": false; }; "type": { "alias": "type"; "required": false; }; }, { "clickEvent": "clickEvent"; }, never, never, false, never>;
+}
