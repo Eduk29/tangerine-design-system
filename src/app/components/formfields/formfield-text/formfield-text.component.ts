@@ -30,6 +30,6 @@ export class FormfieldTextComponent implements OnInit {
   }
 
   public get labelPositionClass(): string {
-    return this.labelPosition === 'before' ? 'd-flex flex-row' : 'd-flex flex-column';
+    return this.labelPosition === 'before' ? 'd-flex flex-row justify-content-between' : 'd-flex flex-column';
   }
 }

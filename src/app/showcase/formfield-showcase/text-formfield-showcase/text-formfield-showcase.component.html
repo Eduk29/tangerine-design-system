@@ -1,10 +1,14 @@
 <form [formGroup]="showcaseForm" (submit)="onSubmit()">
   <app-formfield-text
-    label="Label Above"
+    label="Above"
     labelPosition="above"
     [controlName]="usernameControl"
     class="w-25"></app-formfield-text>
-  <app-formfield-text label="Label Before" labelPosition="before" [controlName]="usernameControl"></app-formfield-text>
+  <app-formfield-text
+    label="Before"
+    labelPosition="before"
+    [controlName]="usernameControl"
+    class="w-25"></app-formfield-text>
 </form>
 
 Value: {{ username }}

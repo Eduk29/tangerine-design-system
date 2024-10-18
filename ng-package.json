@@ -13,7 +13,6 @@
     "@angular/platform-browser",
     "@angular/platform-browser-dynamic",
     "@angular/router",
-    "piscium-theme",
     "rxjs",
     "tslib",
     "zone.js"
