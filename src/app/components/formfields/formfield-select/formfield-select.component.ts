@@ -40,6 +40,8 @@ export class FormfieldSelectComponent implements OnInit, AfterViewInit {
   }
 
   public get labelPositionClass(): string {
-    return this.labelPosition === 'before' ? 'd-flex flex-row' : 'd-flex flex-column';
+    return this.labelPosition === 'before'
+      ? 'd-flex flex-row align-items-baseline justify-content-between'
+      : 'd-flex flex-column';
   }
 }

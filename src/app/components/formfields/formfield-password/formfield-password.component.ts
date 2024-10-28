@@ -36,7 +36,9 @@ export class FormfieldPasswordComponent implements OnInit {
   }
 
   public get labelPositionClass(): string {
-    return this.labelPosition === 'before' ? 'd-flex flex-row align-items-center' : 'd-flex flex-column';
+    return this.labelPosition === 'before'
+      ? 'd-flex flex-row align-items-center justify-content-between'
+      : 'd-flex flex-column';
   }
 
   public togglePasswordVisibility(): void {

@@ -1,7 +1,7 @@
 @if (controlName && label) {
   <div [id]="label.toLowerCase()" [ngClass]="labelPositionClass + ' ' + class">
-    <label [for]="labelFor" class="theme-caption w-15">{{ label }}:</label>
-    <div class="d-flex flex-column w-70">
+    <label [for]="labelFor" class="theme-caption w-auto">{{ label }}:</label>
+    <div class="d-flex flex-column w-auto">
       <input [name]="labelFor" [placeholder]="placeholder" type="text" [formControl]="controlName" />
       <p class="p-0 theme-caption">{{ hint }}</p>
     </div>
