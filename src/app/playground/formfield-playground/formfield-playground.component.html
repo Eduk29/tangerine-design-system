@@ -1,0 +1,33 @@
+<main class="container d-flex flex-column justify-content-center vh-100">
+  <section class="d-flex flex-row justify-content-center">
+    <app-card class="shadow">
+      <div card-content>
+        <form [formGroup]="loginForm" (submit)="onSubmit()">
+          <app-formfield-text
+            label="Username"
+            labelPosition="before"
+            [controlName]="usernameControl"></app-formfield-text>
+          <app-formfield-password label="Password" labelPosition="before" [controlName]="passwordControl">
+          </app-formfield-password>
+
+          <div class="d-flex flex-row justify-content-end mt-3">
+            <app-button
+              flatButton
+              label="Login"
+              color="primary"
+              [disabled]="false"
+              class="mx-2"
+              (clickEvent)="login()"></app-button>
+            <app-button
+              outlineButton
+              label="Clear"
+              color="error"
+              [disabled]="false"
+              class="mx-2"
+              (clickEvent)="clear()"></app-button>
+          </div>
+        </form>
+      </div>
+    </app-card>
+  </section>
+</main>
