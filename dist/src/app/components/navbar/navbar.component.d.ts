@@ -9,5 +9,5 @@ export declare class NavbarComponent {
     constructor();
     dispatchOpenMenu(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<NavbarComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NavbarComponent, "app-navbar", never, { "color": { "alias": "color"; "required": false; }; "title": { "alias": "title"; "required": false; }; "showMenu": { "alias": "showMenu"; "required": false; }; }, { "openMenuEvent": "openMenuEvent"; }, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NavbarComponent, "app-navbar", never, { "color": { "alias": "color"; "required": false; }; "title": { "alias": "title"; "required": false; }; "showMenu": { "alias": "showMenu"; "required": false; }; }, { "openMenuEvent": "openMenuEvent"; }, never, ["[navbar-content]"], false, never>;
 }
