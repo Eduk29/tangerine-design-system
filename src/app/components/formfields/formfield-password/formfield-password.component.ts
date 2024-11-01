@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FormfieldLabelPositioType } from '../types/formfield-label-position.type';
+import { FormfieldLabelPositionType } from '../types/formfield-label-position.type';
 
 @Component({
   selector: 'app-formfield-password',
@@ -11,7 +11,7 @@ export class FormfieldPasswordComponent implements OnInit {
   @Input() class: string = '';
   @Input() controlName!: FormControl;
   @Input() label!: string;
-  @Input() labelPosition: FormfieldLabelPositioType = 'before';
+  @Input() labelPosition: FormfieldLabelPositionType = 'before';
   @Input() placeholder: string = '';
   @Input() hint!: string;
 

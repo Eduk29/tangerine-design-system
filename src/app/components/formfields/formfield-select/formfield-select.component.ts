@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
-import { FormfieldLabelPositioType } from '../types/formfield-label-position.type';
+import { FormfieldLabelPositionType } from '../types/formfield-label-position.type';
 import { SelectOption } from './models/select-option.model';
 
 @Component({
@@ -15,7 +15,7 @@ export class FormfieldSelectComponent implements OnInit, AfterViewInit {
   @Input() controlName!: FormControl<unknown>;
   @Input() hint!: string;
   @Input() label!: string;
-  @Input() labelPosition: FormfieldLabelPositioType = 'before';
+  @Input() labelPosition: FormfieldLabelPositionType = 'before';
   @Input() optionList!: SelectOption[];
   @Input() placeholder: string = '';
 

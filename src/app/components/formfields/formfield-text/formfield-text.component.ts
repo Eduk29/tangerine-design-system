@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FormfieldLabelPositioType } from '../types/formfield-label-position.type';
+import { FormfieldLabelPositionType } from '../types/formfield-label-position.type';
 
 @Component({
   selector: 'app-formfield-text',
@@ -8,10 +8,10 @@ import { FormfieldLabelPositioType } from '../types/formfield-label-position.typ
   styleUrl: './formfield-text.component.scss',
 })
 export class FormfieldTextComponent implements OnInit {
-  @Input() class: string = '';
+  @Input() customClass: string = '';
   @Input() controlName!: FormControl<unknown>;
   @Input() label!: string;
-  @Input() labelPosition: FormfieldLabelPositioType = 'before';
+  @Input() labelPosition: FormfieldLabelPositionType = 'before';
   @Input() placeholder: string = '';
   @Input() hint!: string;
 

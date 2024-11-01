@@ -1,5 +1,5 @@
 @if (controlName && label) {
-  <div [id]="label.toLowerCase()" [ngClass]="labelPositionClass + ' ' + class">
+  <div [id]="label.toLowerCase()" [ngClass]="labelPositionClass + ' ' + customClass">
     <label [for]="labelFor" class="theme-caption w-auto">{{ label }}:</label>
     <div class="d-flex flex-column w-auto">
       <input [name]="labelFor" [placeholder]="placeholder" type="text" [formControl]="controlName" />
