@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { formfieldShowcaseRoutes } from './formfield-showcase.routes';
+import { FormfieldShowcaseRoutes } from './formfield-showcase.routes';
 
-const routes: Routes = formfieldShowcaseRoutes;
+const routes: Routes = FormfieldShowcaseRoutes;
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

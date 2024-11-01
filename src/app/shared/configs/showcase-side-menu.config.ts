@@ -11,6 +11,7 @@ export const showcaseSideMenuConfig: SideMenuButton[] = [
     link: 'showcase/formfield/text',
     displaySubMenu: false,
     children: [
+      { color: 'primary', id: 1, isActive: false, label: 'Email', link: 'showcase/formfield/email' },
       { color: 'primary', id: 1, isActive: false, label: 'Password', link: 'showcase/formfield/password' },
       { color: 'primary', id: 2, isActive: false, label: 'Select', link: 'showcase/formfield/select' },
       { color: 'primary', id: 3, isActive: false, label: 'Text', link: 'showcase/formfield/text' },

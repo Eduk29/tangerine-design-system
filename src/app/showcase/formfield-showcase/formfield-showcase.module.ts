@@ -5,11 +5,13 @@ import { FormfieldShowcaseRoutingModule } from './formfield-showcase-routing.mod
 import { PasswordFormfieldShowcaseModule } from './password-formfield-showcase/password-formfield-showcase.module';
 import { SelectFormfieldShowcaseModule } from './select-formfield-showcase/select-formfield-showcase.module';
 import { TextFormfieldShowcaseModule } from './text-formfield-showcase/text-formfield-showcase.module';
+import { EmailFormfieldShowcaseModule } from './email-formfield-showcase/email-formfield-showcase.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    EmailFormfieldShowcaseModule,
     FormfieldShowcaseRoutingModule,
     PasswordFormfieldShowcaseModule,
     SelectFormfieldShowcaseModule,

@@ -1,0 +1,16 @@
+<form [formGroup]="showcaseForm" (submit)="onSubmit()">
+  <app-formfield-email
+    label="Above"
+    labelPosition="above"
+    [controlName]="emailControl"
+    customClass="w-25"></app-formfield-email>
+  <app-formfield-email
+    label="Before"
+    labelPosition="before"
+    [controlName]="email2Control"
+    customClass="w-25"></app-formfield-email>
+</form>
+
+Value: {{ email }}
+<br />
+Valid: {{ emailControl.valid }}
