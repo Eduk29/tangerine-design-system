@@ -1,0 +1,14 @@
+@if (controlName && label) {
+  <div [id]="label.toLowerCase()" [ngClass]="labelPositionClass + ' ' + customClass">
+    <label [for]="labelFor" class="theme-caption w-auto">{{ label }}:</label>
+    <div class="d-flex flex-column w-auto">
+      <input
+        [name]="labelFor"
+        [placeholder]="placeholder"
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+        [formControl]="controlName" />
+      <p class="p-0 theme-caption">{{ hint }}</p>
+    </div>
+  </div>
+}
