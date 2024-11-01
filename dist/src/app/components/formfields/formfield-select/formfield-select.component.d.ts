@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FormfieldLabelPositioType } from '../types/formfield-label-position.type';
+import { FormfieldLabelPositionType } from '../types/formfield-label-position.type';
 import { SelectOption } from './models/select-option.model';
 import * as i0 from "@angular/core";
 export declare class FormfieldSelectComponent implements OnInit, AfterViewInit {
@@ -9,7 +9,7 @@ export declare class FormfieldSelectComponent implements OnInit, AfterViewInit {
     controlName: FormControl<unknown>;
     hint: string;
     label: string;
-    labelPosition: FormfieldLabelPositioType;
+    labelPosition: FormfieldLabelPositionType;
     optionList: SelectOption[];
     placeholder: string;
     constructor(cd: ChangeDetectorRef);

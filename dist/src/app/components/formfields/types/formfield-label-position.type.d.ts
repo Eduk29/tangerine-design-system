@@ -1,1 +1,1 @@
-export type FormfieldLabelPositioType = 'above' | 'before';
+export type FormfieldLabelPositionType = 'above' | 'before';

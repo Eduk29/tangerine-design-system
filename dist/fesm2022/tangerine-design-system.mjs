@@ -420,7 +420,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImpo
         }] });
 
 class FormfieldTextComponent {
-    class = '';
+    customClass = '';
     controlName;
     label;
     labelPosition = 'before';
@@ -443,12 +443,12 @@ class FormfieldTextComponent {
             : 'd-flex flex-column';
     }
     static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.3.12", ngImport: i0, type: FormfieldTextComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "17.0.0", version: "17.3.12", type: FormfieldTextComponent, selector: "app-formfield-text", inputs: { class: "class", controlName: "controlName", label: "label", labelPosition: "labelPosition", placeholder: "placeholder", hint: "hint" }, ngImport: i0, template: "@if (controlName && label) {\r\n  <div [id]=\"label.toLowerCase()\" [ngClass]=\"labelPositionClass + ' ' + class\">\r\n    <label [for]=\"labelFor\" class=\"theme-caption w-auto\">{{ label }}:</label>\r\n    <div class=\"d-flex flex-column w-auto\">\r\n      <input [name]=\"labelFor\" [placeholder]=\"placeholder\" type=\"text\" [formControl]=\"controlName\" />\r\n      <p class=\"p-0 theme-caption\">{{ hint }}</p>\r\n    </div>\r\n  </div>\r\n}\r\n", styles: [".input-width{min-width:250px}\n"], dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i2.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i2.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i2.FormControlDirective, selector: "[formControl]", inputs: ["formControl", "disabled", "ngModel"], outputs: ["ngModelChange"], exportAs: ["ngForm"] }] });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "17.0.0", version: "17.3.12", type: FormfieldTextComponent, selector: "app-formfield-text", inputs: { customClass: "customClass", controlName: "controlName", label: "label", labelPosition: "labelPosition", placeholder: "placeholder", hint: "hint" }, ngImport: i0, template: "@if (controlName && label) {\r\n  <div [id]=\"label.toLowerCase()\" [ngClass]=\"labelPositionClass + ' ' + customClass\">\r\n    <label [for]=\"labelFor\" class=\"theme-caption w-auto\">{{ label }}:</label>\r\n    <div class=\"d-flex flex-column w-auto\">\r\n      <input [name]=\"labelFor\" [placeholder]=\"placeholder\" type=\"text\" [formControl]=\"controlName\" />\r\n      <p class=\"p-0 theme-caption\">{{ hint }}</p>\r\n    </div>\r\n  </div>\r\n}\r\n", styles: [".input-width{min-width:250px}\n"], dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i2.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i2.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i2.FormControlDirective, selector: "[formControl]", inputs: ["formControl", "disabled", "ngModel"], outputs: ["ngModelChange"], exportAs: ["ngForm"] }] });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImport: i0, type: FormfieldTextComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'app-formfield-text', template: "@if (controlName && label) {\r\n  <div [id]=\"label.toLowerCase()\" [ngClass]=\"labelPositionClass + ' ' + class\">\r\n    <label [for]=\"labelFor\" class=\"theme-caption w-auto\">{{ label }}:</label>\r\n    <div class=\"d-flex flex-column w-auto\">\r\n      <input [name]=\"labelFor\" [placeholder]=\"placeholder\" type=\"text\" [formControl]=\"controlName\" />\r\n      <p class=\"p-0 theme-caption\">{{ hint }}</p>\r\n    </div>\r\n  </div>\r\n}\r\n", styles: [".input-width{min-width:250px}\n"] }]
-        }], propDecorators: { class: [{
+            args: [{ selector: 'app-formfield-text', template: "@if (controlName && label) {\r\n  <div [id]=\"label.toLowerCase()\" [ngClass]=\"labelPositionClass + ' ' + customClass\">\r\n    <label [for]=\"labelFor\" class=\"theme-caption w-auto\">{{ label }}:</label>\r\n    <div class=\"d-flex flex-column w-auto\">\r\n      <input [name]=\"labelFor\" [placeholder]=\"placeholder\" type=\"text\" [formControl]=\"controlName\" />\r\n      <p class=\"p-0 theme-caption\">{{ hint }}</p>\r\n    </div>\r\n  </div>\r\n}\r\n", styles: [".input-width{min-width:250px}\n"] }]
+        }], propDecorators: { customClass: [{
                 type: Input
             }], controlName: [{
                 type: Input
@@ -526,6 +526,7 @@ const showcaseSideMenuConfig = [
         link: 'showcase/formfield/text',
         displaySubMenu: false,
         children: [
+            { color: 'primary', id: 1, isActive: false, label: 'Email', link: 'showcase/formfield/email' },
             { color: 'primary', id: 1, isActive: false, label: 'Password', link: 'showcase/formfield/password' },
             { color: 'primary', id: 2, isActive: false, label: 'Select', link: 'showcase/formfield/select' },
             { color: 'primary', id: 3, isActive: false, label: 'Text', link: 'showcase/formfield/text' },

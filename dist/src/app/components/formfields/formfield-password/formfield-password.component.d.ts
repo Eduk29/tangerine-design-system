@@ -1,12 +1,12 @@
 import { OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FormfieldLabelPositioType } from '../types/formfield-label-position.type';
+import { FormfieldLabelPositionType } from '../types/formfield-label-position.type';
 import * as i0 from "@angular/core";
 export declare class FormfieldPasswordComponent implements OnInit {
     class: string;
     controlName: FormControl;
     label: string;
-    labelPosition: FormfieldLabelPositioType;
+    labelPosition: FormfieldLabelPositionType;
     placeholder: string;
     hint: string;
     displayPassword: boolean;
