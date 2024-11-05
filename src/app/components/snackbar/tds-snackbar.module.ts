@@ -9,4 +9,4 @@ import { TDSSnackbarComponent } from './tds-snackbar.component';
   imports: [CommonModule, TDSCardModule],
   exports: [TDSSnackbarComponent],
 })
-export class SnackbarModule {}
+export class TDSSnackbarModule {}
