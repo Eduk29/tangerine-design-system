@@ -1,14 +1,14 @@
-export * from './snackbar.module';
-export * from './snackbar.component';
+export * from './tds-snackbar.module';
+export * from './tds-snackbar.component';
 
-export * from './models/snackbar-data.model';
-export * from './services/snackbar.service';
-export * from './types/snackbar-color.type';
-export * from './types/snackbar-horizontal-position.type';
-export * from './types/snackbar-icon-position.type';
-export * from './types/snackbar-vertical-position.type';
+export * from './models/tds-snackbar-data.model';
+export * from './services/tds-snackbar.service';
+export * from './types/tds-snackbar-color.type';
+export * from './types/tds-snackbar-horizontal-position.type';
+export * from './types/tds-snackbar-icon-position.type';
+export * from './types/tds-snackbar-vertical-position.type';
 
-export * from './templates/error-snackbar.template';
-export * from './templates/info-snackbar.template';
-export * from './templates/success-snackbar.template';
-export * from './templates/warning-snackbar.template';
+export * from './templates/tds-error-snackbar.template';
+export * from './templates/tds-info-snackbar.template';
+export * from './templates/tds-success-snackbar.template';
+export * from './templates/tds-warning-snackbar.template';

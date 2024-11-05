@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-password-formfield-showcase',
+  selector: 'tds-password-formfield-showcase',
   templateUrl: './password-formfield-showcase.component.html',
   styleUrl: './password-formfield-showcase.component.scss',
 })

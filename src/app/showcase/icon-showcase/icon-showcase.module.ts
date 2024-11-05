@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { IconShowcaseComponent } from './icon-showcase.component';
-import { IconModule } from 'src/app/components/icon/icon.module';
+import { TDSIconModule } from 'src/app/components/icon/tds-icon.module';
 
 @NgModule({
   declarations: [IconShowcaseComponent],
-  imports: [CommonModule, IconModule],
+  imports: [CommonModule, TDSIconModule],
   exports: [IconShowcaseComponent],
 })
 export class IconShowcaseModule {}

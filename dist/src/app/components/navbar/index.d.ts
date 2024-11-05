@@ -1,3 +1,3 @@
-export * from './navbar.component';
-export * from './navbar.module';
-export * from './types/navbar-colors.type';
+export * from './tds-navbar.component';
+export * from './tds-navbar.module';
+export * from './types/tds-navbar-colors.type';

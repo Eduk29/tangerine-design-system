@@ -1,0 +1,32 @@
+import { AfterViewChecked, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges } from '@angular/core';
+import { TDSButtonColorTypes } from './types/tds-button-color.type';
+import { TDSButtonIconColorsType } from './types/tds-button-icon-colors.type';
+import { TDSButtonIconLibrariesType } from './types/tds-button-icon-library.type';
+import { TDSButtonIconPositionType } from './types/tds-button-icon-position.type';
+import * as i0 from "@angular/core";
+export declare class TDSButtonComponent implements OnChanges, AfterViewChecked {
+    private eleRef;
+    private cdref;
+    customClass: string;
+    color: string | TDSButtonColorTypes;
+    disabled: boolean;
+    icon: string;
+    iconColor: string | TDSButtonIconColorsType;
+    iconLibrary: string | TDSButtonIconLibrariesType;
+    iconPosition: string | TDSButtonIconPositionType;
+    label: string;
+    type: 'button' | 'submit';
+    clickEvent: EventEmitter<void>;
+    private _displayButton;
+    constructor(eleRef: ElementRef, cdref: ChangeDetectorRef);
+    ngOnChanges(): void;
+    ngAfterViewChecked(): void;
+    get class(): string;
+    get displayButton(): boolean;
+    get isFabButton(): boolean;
+    dispatchClickEvent(): void;
+    private validateBackgroundColors;
+    private validateOutputFunction;
+    static ɵfac: i0.ɵɵFactoryDeclaration<TDSButtonComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TDSButtonComponent, "tds-button", never, { "customClass": { "alias": "customClass"; "required": false; }; "color": { "alias": "color"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "icon": { "alias": "icon"; "required": false; }; "iconColor": { "alias": "iconColor"; "required": false; }; "iconLibrary": { "alias": "iconLibrary"; "required": false; }; "iconPosition": { "alias": "iconPosition"; "required": false; }; "label": { "alias": "label"; "required": false; }; "type": { "alias": "type"; "required": false; }; }, { "clickEvent": "clickEvent"; }, never, never, false, never>;
+}

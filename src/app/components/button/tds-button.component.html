@@ -1,0 +1,26 @@
+<button
+  [type]="type"
+  class="d-flex flex-row justify-content-center align-items-center"
+  [ngClass]="class"
+  [disabled]="disabled"
+  (click)="dispatchClickEvent()">
+  @if (iconPosition === 'before' && icon !== '') {
+    <tds-icon
+      [iconName]="icon"
+      [iconLibrary]="iconLibrary"
+      [color]="iconColor"
+      iconSize="small"
+      class="button-icon-before"></tds-icon>
+  }
+
+  <p class="m-0 theme-button">{{ label }}</p>
+
+  @if (iconPosition === 'after' && icon !== '') {
+    <tds-icon
+      [iconName]="icon"
+      [iconLibrary]="iconLibrary"
+      [color]="iconColor"
+      iconSize="small"
+      class="button-icon-after"></tds-icon>
+  }
+</button>

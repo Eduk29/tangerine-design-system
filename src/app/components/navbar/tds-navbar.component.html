@@ -1,0 +1,12 @@
+<div class="navbar w-100" [ngClass]="color">
+  <div class="d-flex flex-row w-10">
+    @if (showMenu) {
+      <tds-button TDSFabButton icon="bars" iconLibrary="font-awesome" (clickEvent)="dispatchOpenMenu()" class="me-2">
+      </tds-button>
+    }
+    <h4 class="navbar-title m-0">{{ title }}</h4>
+  </div>
+  <div class="w-90">
+    <ng-content select="[navbar-content]"></ng-content>
+  </div>
+</div>
