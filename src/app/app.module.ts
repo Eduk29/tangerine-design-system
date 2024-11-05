@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SideMenuModule } from './components/side-menu/side-menu.module';
+import { SideMenuModule } from './components/side-menu/tds-side-menu.module';
 import { HomeModule } from './home/home.module';
 import { ShowcaseModule } from './showcase/showcase.module';
 import { NotFoundPageModule } from './shared/pages/not-found-page/not-found-page.module';

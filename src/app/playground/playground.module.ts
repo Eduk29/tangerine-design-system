@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ButtonModule, CardModule, FormfieldPasswordModule, FormfieldTextModule } from 'public_api';
+import { TDSButtonModule, TDSCardModule, TDSFormfieldPasswordModule, TDSFormfieldTextModule } from 'public_api';
 
 import { FormfieldPlaygroundComponent } from './formfield-playground/formfield-playground.component';
 import { PlaygroundRoutingModule } from './playground-routing.module';
@@ -9,11 +9,11 @@ import { PlaygroundRoutingModule } from './playground-routing.module';
 @NgModule({
   declarations: [FormfieldPlaygroundComponent],
   imports: [
-    ButtonModule,
-    CardModule,
+    TDSButtonModule,
+    TDSCardModule,
     CommonModule,
-    FormfieldTextModule,
-    FormfieldPasswordModule,
+    TDSFormfieldTextModule,
+    TDSFormfieldPasswordModule,
     ReactiveFormsModule,
     PlaygroundRoutingModule,
   ],

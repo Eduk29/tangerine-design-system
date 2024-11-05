@@ -1,5 +1,5 @@
-export * from './side-menu.module';
-export * from './side-menu.component';
+export * from './tds-side-menu.module';
+export * from './tds-side-menu.component';
 
-export * from './models/side-menu-button.model';
-export * from './types/side-menu-button-color.type';
+export * from './models/tds-side-menu-button.model';
+export * from './types/tds-side-menu-button-color.type';

@@ -1,14 +1,14 @@
 <form [formGroup]="showcaseForm" (submit)="onSubmit()">
-  <app-formfield-email
+  <tds-formfield-email
     label="Above"
     labelPosition="above"
     [controlName]="emailControl"
-    customClass="w-25"></app-formfield-email>
-  <app-formfield-email
+    customClass="w-25"></tds-formfield-email>
+  <tds-formfield-email
     label="Before"
     labelPosition="before"
     [controlName]="email2Control"
-    customClass="w-25"></app-formfield-email>
+    customClass="w-25"></tds-formfield-email>
 </form>
 
 Value: {{ email }}

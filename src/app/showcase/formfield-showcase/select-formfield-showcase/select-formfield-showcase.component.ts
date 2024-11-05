@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { SelectOption } from 'src/app/components/formfields/formfield-select/models/select-option.model';
+import { TDSFormfieldSelectOptions } from 'src/app/components/formfields/formfield-select/models/tds-formfield-select-option.model';
 
 @Component({
   selector: 'app-select-formfield-showcase',
@@ -8,7 +8,7 @@ import { SelectOption } from 'src/app/components/formfields/formfield-select/mod
   styleUrl: './select-formfield-showcase.component.scss',
 })
 export class SelectFormfieldShowcaseComponent {
-  public foodOptions: SelectOption[] = [
+  public foodOptions: TDSFormfieldSelectOptions[] = [
     { label: 'Pizza', value: 'pizza' },
     { label: 'Hamburger', value: 'hamburguer' },
     { label: 'Salad', value: 'salad' },

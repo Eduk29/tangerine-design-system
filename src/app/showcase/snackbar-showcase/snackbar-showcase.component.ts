@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-import { SnackbarData } from './../../components/snackbar/models/snackbar-data.model';
-import { SnackbarService } from './../../components/snackbar/services/snackbar.service';
-import { ErrorSnackbarTemplate } from './../../components/snackbar/templates/error-snackbar.template';
-import { InfoSnackbarTemplate } from './../../components/snackbar/templates/info-snackbar.template';
-import { SuccessSnackbarTemplate } from './../../components/snackbar/templates/success-snackbar.template';
-import { WarningSnackbarTemplate } from './../../components/snackbar/templates/warning-snackbar.template';
+import { TDSSnackbarData } from '../../components/snackbar/models/tds-snackbar-data.model';
+import { TDSSnackbarService } from '../../components/snackbar/services/tds-snackbar.service';
+import { TDSErrorSnackbarTemplate } from '../../components/snackbar/templates/tds-error-snackbar.template';
+import { TDSInfoSnackbarTemplate } from '../../components/snackbar/templates/tds-info-snackbar.template';
+import { TDSSuccessSnackbarTemplate } from '../../components/snackbar/templates/tds-success-snackbar.template';
+import { TDSWarningSnackbarTemplate } from '../../components/snackbar/templates/tds-warning-snackbar.template';
 
 @Component({
   selector: 'app-snackbar-showcase',
@@ -13,25 +13,25 @@ import { WarningSnackbarTemplate } from './../../components/snackbar/templates/w
   styleUrl: './snackbar-showcase.component.scss',
 })
 export class SnackbarShowcaseComponent {
-  constructor(private snackbarService: SnackbarService) {}
+  constructor(private snackbarService: TDSSnackbarService) {}
 
   public openErrorSnackbar(): void {
-    const snackbarData: SnackbarData = { ...ErrorSnackbarTemplate, message: 'This is an error message' };
+    const snackbarData: TDSSnackbarData = { ...TDSErrorSnackbarTemplate, message: 'This is an error message' };
     this.snackbarService.snackbar$.next(snackbarData);
   }
 
   public openInfoSnackbar(): void {
-    const snackbarData: SnackbarData = { ...InfoSnackbarTemplate, message: 'This is an info message' };
+    const snackbarData: TDSSnackbarData = { ...TDSInfoSnackbarTemplate, message: 'This is an info message' };
     this.snackbarService.snackbar$.next(snackbarData);
   }
 
   public openSuccessSnackbar(): void {
-    const snackbarData: SnackbarData = { ...SuccessSnackbarTemplate, message: 'This is an success message' };
+    const snackbarData: TDSSnackbarData = { ...TDSSuccessSnackbarTemplate, message: 'This is an success message' };
     this.snackbarService.snackbar$.next(snackbarData);
   }
 
   public openWarningSnackbar(): void {
-    const snackbarData: SnackbarData = { ...WarningSnackbarTemplate, message: 'This is an warning message' };
+    const snackbarData: TDSSnackbarData = { ...TDSWarningSnackbarTemplate, message: 'This is an warning message' };
     this.snackbarService.snackbar$.next(snackbarData);
   }
 }

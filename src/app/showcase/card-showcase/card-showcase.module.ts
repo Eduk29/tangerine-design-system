@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ButtonModule } from 'src/app/components/button/button.module';
-import { CardModule } from 'src/app/components/card/card.module';
 
+import { TDSButtonModule } from './../../components/button/tds-button.module';
+import { TDSCardModule } from './../../components/card/tds-card.module';
 import { CardShowcaseComponent } from './card-showcase.component';
 
 @NgModule({
   declarations: [CardShowcaseComponent],
-  imports: [ButtonModule, CardModule, CommonModule],
+  imports: [TDSButtonModule, TDSCardModule, CommonModule],
   exports: [CardShowcaseComponent],
 })
 export class CardShowcaseModule {}
